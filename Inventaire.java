@@ -1,1 +1,1 @@
-Emprunt.java Retour.java Perdu.java
+public class Inventaire{}

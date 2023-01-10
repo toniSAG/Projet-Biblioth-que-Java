@@ -1,5 +1,9 @@
 public class Roman extends Livre{
 
+    /*La classe roman est définie par son ISBN, son titre,
+     * son auteur, son année de publication et par son statut d'oeuvre de fiction
+     */
+
     final boolean EstFictif = true;
 
     public Roman(int sonISBN, String sonTitre, String sonAuteur, int sonAnneeDePublication){
@@ -7,7 +11,7 @@ public class Roman extends Livre{
     }
 
     public int getISBN(){
-        return ISBN;
+        return this.ISBN;
     }
 
     public void setISBN(int ISBN){
@@ -23,7 +27,7 @@ public class Roman extends Livre{
     }
 
     public String Auteur(){
-        return Auteur;
+        return this.Auteur;
     }
 
     public void setAuteur(String Auteur){
@@ -31,18 +35,19 @@ public class Roman extends Livre{
     }
 
     public int AnneeDePublication(){
-        return AnneeDePublication;
+        return this.AnneeDePublication;
     }
 
     public void setAnneeDePublication(int AnneeDePublication){
         this.AnneeDePublication = AnneeDePublication;
     }
 
-   public boolean EstFictif(){
-    if
-   }
+  /*  public boolean EstFictif(){
+    if (EstFictif == "Fiction") ;
+   }*/
 
     public String toString(){
+        if (EstFictif == "Fiction")
         return super.toString() + " c'est une oeuvre de " + EstFictif;
     }
 

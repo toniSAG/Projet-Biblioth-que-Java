@@ -1,8 +1,13 @@
 public class BD extends Livre{
 
+    /*La classe BD est définie par l'ISBN, le titre, l'auteur
+    * l'année de publication et par son dessinateur
+    */
+
     private String Dessinateur;
 
     public BD(int sonISBN, String sonTitre, String sonAuteur, int sonAnneeDePublication){
+        
         super(sonISBN, sonTitre, sonAuteur, sonAnneeDePublication);
     }
 
@@ -44,6 +49,20 @@ public class BD extends Livre{
 
     public void Dessinateur(String Dessinateur){
         this.Dessinateur = Dessinateur;
+    }
+
+    
+    public boolean estDisponible(){
+        String message1 = "Ce document est disponible";
+        String message2 = "Ce document est indisponible";
+
+        if(estDisponible() == true){
+            System.out.println(message1);
+        }
+
+        else{
+            System.out.println(message2);
+        }
     }
 
 public String toString(){
